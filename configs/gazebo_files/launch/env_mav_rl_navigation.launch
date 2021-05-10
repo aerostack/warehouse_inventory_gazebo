@@ -1,0 +1,19 @@
+<launch>
+  <arg name="world_name" default="qr_world"/>
+  <arg name="enable_logging" default="false"/>
+  <arg name="enable_ground_truth" default="true"/>
+  <arg name="drone_swarm_number" default="1"/>
+  <arg name="mav_name" default="hummingbird_laser" />
+  <arg name="project" default="${AEROSTACK_PROJECT}" />
+
+  <env name="GAZEBO_MODEL_PATH" value="$(arg project)/configs/gazebo_files/model"/>
+  <env name="GAZEBO_RESOURCE_PATH" value="$(arg project)/configs/gazebo_files/model"/>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg project)/configs/gazebo_files/worlds/$(arg world_name).world"/>
+    <!-- <arg name="debug" value="true"/> -->
+    <arg name="paused" value="false"/>
+    <!--<arg name="gui" value="false"/>
+    <arg name="headless" value="true"/>-->
+  </include>
+
+</launch>

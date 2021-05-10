@@ -1,0 +1,15 @@
+material Plano5/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Plano5.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}

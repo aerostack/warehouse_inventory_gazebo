@@ -1,0 +1,15 @@
+material Plano12/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Plano12.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+material Plano30/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Plano30.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}

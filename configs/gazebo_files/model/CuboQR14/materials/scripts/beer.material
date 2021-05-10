@@ -1,0 +1,15 @@
+material CuboQR14/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture CuboQR14.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}

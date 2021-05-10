@@ -1,0 +1,81 @@
+[submodule "stack_deprecated/common/drone_process"]
+	path = stack_deprecated/common/drone_process
+	url = https://bitbucket.org/visionaerialrobotics/drone_process.git
+[submodule "stack_deprecated/common/dronemoduleros"]
+	path = stack_deprecated/common/dronemoduleros
+	url = https://bitbucket.org/visionaerialrobotics/dronemoduleros.git
+[submodule "stack_deprecated/common/dronemsgsros"]
+	path = stack_deprecated/common/dronemsgsros
+	url = https://bitbucket.org/visionaerialrobotics/dronemsgsros.git
+[submodule "stack_deprecated/libraries/lib_pugixml"]
+	path = stack_deprecated/libraries/lib_pugixml
+	url = https://bitbucket.org/visionaerialrobotics/lib_pugixml.git
+[submodule "stack_deprecated/libraries/mav_comm_rotors"]
+	path = stack_deprecated/libraries/mav_comm_rotors
+	url = https://bitbucket.org/visionaerialrobotics/mav_comm_rotors.git
+[submodule "stack/common/aerostack_msgs"]
+	path = stack/common/aerostack_msgs
+	url = https://bitbucket.org/visionaerialrobotics/aerostack_msgs.git
+[submodule "stack/common/behavior_execution_controller"]
+	path = stack/common/behavior_execution_controller
+	url = https://bitbucket.org/visionaerialrobotics/behavior_execution_controller.git
+[submodule "stack/common/robot_process"]
+	path = stack/common/robot_process
+	url = https://bitbucket.org/visionaerialrobotics/robot_process.git
+[submodule "stack/libraries/catkin_simple"]
+	path = stack/libraries/catkin_simple
+	url = https://bitbucket.org/visionaerialrobotics/catkin_simple.git
+[submodule "stack/libraries/lib_cvgekf"]
+	path = stack/libraries/lib_cvgekf
+	url = https://bitbucket.org/visionaerialrobotics/lib_cvgekf.git
+[submodule "stack/libraries/lib_cvgutils"]
+	path = stack/libraries/lib_cvgutils
+	url = https://bitbucket.org/visionaerialrobotics/lib_cvgutils.git
+[submodule "stack/libraries/pugixml"]
+	path = stack/libraries/pugixml
+	url = https://bitbucket.org/visionaerialrobotics/pugixml.git
+[submodule "stack/simulation/quadrotor_gazebo_simulator"]
+	path = stack/simulation/quadrotor_gazebo_simulator
+	url = https://bitbucket.org/visionaerialrobotics/quadrotor_gazebo_simulator.git
+[submodule "stack/hardware_interface/gazebo_interface"]
+	path = stack/hardware_interface/gazebo_interface
+	url = https://bitbucket.org/visionaerialrobotics/gazebo_interface.git
+[submodule "stack/behaviors/behavior_packages/attention_to_visual_markers"]
+	path = stack/behaviors/behavior_packages/attention_to_visual_markers
+	url = https://bitbucket.org/visionaerialrobotics/attention_to_visual_markers.git
+[submodule "stack/behaviors/behavior_packages/basic_quadrotor_behaviors"]
+	path = stack/behaviors/behavior_packages/basic_quadrotor_behaviors
+	url = https://bitbucket.org/visionaerialrobotics/basic_quadrotor_behaviors.git
+[submodule "stack/behaviors/behavior_packages/navigation_with_lidar"]
+	path = stack/behaviors/behavior_packages/navigation_with_lidar
+	url = https://bitbucket.org/visionaerialrobotics/navigation_with_lidar.git
+[submodule "stack/behaviors/behavior_packages/quadrotor_motion_with_pid_control"]
+	path = stack/behaviors/behavior_packages/quadrotor_motion_with_pid_control
+	url = https://bitbucket.org/visionaerialrobotics/quadrotor_motion_with_pid_control.git
+[submodule "stack/behavior_management/coordinator_cbc"]
+	path = stack/behavior_management/coordinator_cbc
+	url = https://github.com/cvar-upm/coordinator_cbc.git
+[submodule "stack/user_interface/alphanumeric_viewer"]
+	path = stack/user_interface/alphanumeric_viewer
+	url = https://bitbucket.org/visionaerialrobotics/alphanumeric_viewer.git
+[submodule "stack/user_interface/behavior_execution_viewer"]
+	path = stack/user_interface/behavior_execution_viewer
+	url = https://bitbucket.org/visionaerialrobotics/behavior_execution_viewer.git
+[submodule "stack/user_interface/belief_memory_viewer"]
+	path = stack/user_interface/belief_memory_viewer
+	url = https://bitbucket.org/visionaerialrobotics/belief_memory_viewer.git
+[submodule "stack/belief_management/belief_manager"]
+	path = stack/belief_management/belief_manager
+	url = https://bitbucket.org/visionaerialrobotics/belief_manager.git
+[submodule "stack/mission_control/python_based_mission_interpreter"]
+	path = stack/mission_control/python_based_mission_interpreter
+	url = https://bitbucket.org/visionaerialrobotics/python_based_mission_interpreter.git
+[submodule "stack/belief_management/belief_updater"]
+	path = stack/belief_management/belief_updater
+	url = https://bitbucket.org/visionaerialrobotics/belief_updater.git
+[submodule "stack/libraries/behaviorlib"]
+	path = stack/libraries/behaviorlib
+	url = https://github.com/cvar-upm/behaviorlib.git
+[submodule "stack/libraries/ros_utils_lib"]
+	path = stack/libraries/ros_utils_lib
+	url = https://bitbucket.org/visionaerialrobotics/ros_utils_lib.git

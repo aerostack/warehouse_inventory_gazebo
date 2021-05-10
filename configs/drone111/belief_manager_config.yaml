@@ -1,0 +1,8 @@
+predicate_semantics:
+  - predicate_name:          item_grasped
+    mutual_exclusive_values: no
+    maximum_values:          10
+
+emergency_events:
+  - predicate_name:          battery_level
+    emergency_value:         low

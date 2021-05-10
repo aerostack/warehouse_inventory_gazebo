@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="Plano2">
+    <link name="link">
+      <gravity>0</gravity>
+      <pose>0 0 0.25 0 0 0</pose>
+      <inertial>
+        <mass>0.000001</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.2 0.000001 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.2 0.000001 0.2</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://Plano2/materials/scripts</uri>
+            <uri>model://Plano2/materials/textures</uri>
+            <name>Plano2/Diffuse</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,15 @@
+material CubeQR/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture CubeQR.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}

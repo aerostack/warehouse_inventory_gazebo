@@ -1,0 +1,203 @@
+#------------------------------------------------------
+# BRIEF: Catalog of robot behaviors in Aerostack.
+#------------------------------------------------------
+
+#------------------------------------------------------
+# BEHAVIORS:
+#
+# For each behavior, a descriptor is specified using
+# the following attributes:
+#
+# timeout: Maximum available time to reach the goal.
+# Number of seconds (integer).
+#
+# task: Task performed by the behavior.
+#
+# package: Name of the software package.
+#
+# requires: List of task required by the behavior.
+#
+# suitability: Suitability of the behavior (in percentage).
+# An integer in [0,100]
+#
+# TASKS:
+#
+# For each task that a behavior can perform, a
+# descriptor is specified using the following attributes:
+#
+# execution_goal: A value of {achieve_goal, keep_running}.
+#
+# reactive_start: Expresses if the task is activated by
+# default or not. Boolean {TRUE,FALSE}.
+#
+# start_on_request: Expresses if the task can only be
+# started by request or automatically.
+# Boolean {TRUE,FALSE}.
+#
+# parameters: List of available parameters for the
+# task. For each task it is possible
+# to define the allowed values, and the
+# dimensions.
+#
+# COMPATIBILITY CONSTRAINTS:
+#
+# Each constraint indicates a list of incompatible tasks
+# that are mutually exclusive.
+#
+#------------------------------------------------------
+default_values:
+- tasks:
+  - execution_goal: achieve_goal
+    start_on_request: TRUE
+    reactive_start: FALSE
+    timeout: 15
+- behaviors:
+  - suitability: 100
+
+#------------------------------------------------------
+behaviors:
+#- behavior: TAKE_OFF
+#  package: basic_quadrotor_behaviors
+#  task: TAKE_OFF
+#  requires:
+#  - task: THRUST_CONTROL
+
+#- behavior: LAND
+#  package: basic_quadrotor_behaviors
+#  task: LAND
+#  requires:
+#  - task: THRUST_CONTROL
+
+- behavior: SELF_LOCALIZE_WITH_GROUND_TRUTH
+  package: basic_quadrotor_behaviors
+  task: SELF_LOCALIZE
+#------------------------------------------------------
+- behavior: TAKE_OFF_WITH_PID
+  package: quadrotor_motion_with_pid_control
+  task: TAKE_OFF
+  requires:
+  - task: PID_MOTION_CONTROL
+
+- behavior: LAND_WITH_PID
+  package: quadrotor_motion_with_pid_control
+  task: LAND
+  requires:
+  - task: PID_MOTION_CONTROL
+
+- behavior: KEEP_HOVERING_WITH_PID_CONTROL
+  package: quadrotor_motion_with_pid_control
+  task: HOVER
+  requires:
+  - task: PID_MOTION_CONTROL
+
+- behavior: KEEP_MOVING_WITH_PID_CONTROL
+  package: quadrotor_motion_with_pid_control
+  task: MOVE_AT_SPEED
+  requires:
+  - task: PID_MOTION_CONTROL
+
+- behavior: ROTATE_WITH_PID_CONTROL
+  package: quadrotor_motion_with_pid_control
+  task: ROTATE
+  requires:
+  - task: PID_MOTION_CONTROL
+
+- behavior: FOLLOW_PATH
+  package: quadrotor_motion_with_pid_control
+  task: FOLLOW_PATH
+  requires:
+  - task: PID_MOTION_CONTROL
+
+- behavior: QUADROTOR_PID_MOTION_CONTROL
+  package: quadrotor_motion_with_pid_control
+  task: PID_MOTION_CONTROL
+  suitability: 90
+  requires:
+  - task: SELF_LOCALIZE
+    minimum_performance: 70
+  - task: THRUST_CONTROL
+
+- behavior: QUADROTOR_PID_THRUST_CONTROL
+  package: quadrotor_motion_with_pid_control
+  task: THRUST_CONTROL
+  requires:
+  - task: SELF_LOCALIZE
+
+#------------------------------------------------------
+- behavior: GENERATE_PATH_WITH_OCCUPANCY_GRID
+  package: navigation_with_lidar
+  task: GENERATE_PATH
+  requires:
+  - task: SELF_LOCALIZE
+
+- behavior: CLEAR_OCCUPANCY_GRID
+  package: navigation_with_lidar
+  task: CLEAR_OCCUPANCY_GRID
+  requires:
+  - task: SELF_LOCALIZE
+
+- behavior: SAVE_OCCUPANCY_GRID
+  package: navigation_with_lidar
+  task: SAVE_OCCUPANCY_GRID
+
+#------------------------------------------------------
+
+tasks:
+
+- task: LAND
+
+- task: TAKE_OFF
+
+- task: HOVER
+  execution_goal: keep_running
+  start_on_request: FALSE
+  reactive_start: TRUE
+
+- task: MOVE_AT_SPEED
+  parameters:
+  - parameter: speed
+    allowed_values: [0,30]
+  - parameter: direction
+    allowed_values: [FORWARD, BACKWARD, LEFT, RIGHT]
+
+- task: ROTATE
+  timeout: 30
+  parameters:
+  - parameter: angle
+    allowed_values: [-360,360]
+  - parameter: relative_angle
+    allowed_values: [-360,360]
+
+- task: FOLLOW_PATH
+  timeout: 180
+  parameters:
+  - parameter: path
+    allowed_values: point_list
+
+- task: PID_MOTION_CONTROL
+  start_on_request: FALSE
+  execution_goal: keep_running
+
+- task: THRUST_CONTROL
+  start_on_request: FALSE
+  execution_goal: keep_running
+
+- task: SELF_LOCALIZE
+  start_on_request: FALSE
+  execution_goal: keep_running
+
+- task: SAVE_OCCUPANCY_GRID
+  parameters:
+  - parameter: map_name
+    allowed_values: string
+
+#------------------------------------------------------
+exclusivity_constraints:
+
+- mutually_exclusive:
+  - TAKE_OFF
+  - LAND
+  - HOVER
+  - FOLLOW_PATH
+  - MOVE_AT_SPEED
+  - ROTATE

@@ -31,7 +31,7 @@ def mission():
   print("Taking off...")
   mxc.executeTask('TAKE_OFF')
   mxc.startTask('HOVER')
-  mxc.startTask('CLEAR_OCCUPANCY_GRID')
+  mxc.startTask('CLEAR_OCCUPANCY_GRID')	
   print("Take off completed...")
   j=0
   rospy.Subscriber("/drone111/all_beliefs", ListOfBeliefs, qr_callback)
@@ -79,7 +79,7 @@ def mission():
 
   #print(qr_codes)
   print('-> Total QR codes detected: {}'.format(len(qr_codes)))
-  #mxc.stopTask('MOTION_PID_CONTROL')
+  mxc.stopTask('MOTION_PID_CONTROL')
   result = mxc.executeTask('LAND')
   print('-> result {}'.format(traject))
   print('Finish mission...')

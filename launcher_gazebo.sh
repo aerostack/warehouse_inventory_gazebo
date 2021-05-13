@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DRONE_SWARM_MEMBERS=$1
-export AEROSTACK_PROJECT=${AEROSTACK_STACK}/projects/warehouse_inventory_gazebo
+export AEROSTACK_PROJECT=${PWD}
 MAV_NAME=hummingbird_laser
 
 if [ -z $DRONE_SWARM_MEMBERS ] # Check if NUMID_DRONE is NULL

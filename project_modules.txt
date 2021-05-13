@@ -76,6 +76,3 @@
 [submodule "stack/libraries/behaviorlib"]
 	path = stack/libraries/behaviorlib
 	url = https://github.com/cvar-upm/behaviorlib.git
-[submodule "stack/libraries/ros_utils_lib"]
-	path = stack/libraries/ros_utils_lib
-	url = https://bitbucket.org/visionaerialrobotics/ros_utils_lib.git

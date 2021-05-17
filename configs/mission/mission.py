@@ -79,7 +79,6 @@ def mission():
 
   #print(qr_codes)
   print('-> Total QR codes detected: {}'.format(len(qr_codes)))
-  mxc.stopTask('MOTION_PID_CONTROL')
   result = mxc.executeTask('LAND')
   print('-> result {}'.format(traject))
   print('Finish mission...')

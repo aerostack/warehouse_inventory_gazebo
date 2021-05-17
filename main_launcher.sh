@@ -118,15 +118,6 @@ roslaunch belief_memory_viewer belief_memory_viewer.launch --wait \
   drone_id:=$NUMID_DRONE;
 exec bash\""  \
 `#---------------------------------------------------------------------------------------------` \
-`# Behavior Execution Viewer                                                                   ` \
-`#---------------------------------------------------------------------------------------------` \
---tab --title "Behavior Execution Viewer" --command "bash -c \"
-roslaunch behavior_execution_viewer behavior_execution_viewer.launch --wait \
-  robot_namespace:=drone$NUMID_DRONE \
-  drone_id:=$NUMID_DRONE \
-  catalog_path:=${APPLICATION_PATH}/configs/mission/behavior_catalog.yaml;
-exec bash\""  \
-`#---------------------------------------------------------------------------------------------` \
 `# Navigation With Lidar Behaviors                                                             ` \
 `#---------------------------------------------------------------------------------------------` \
 --tab --title "Navigation With Lidar" --command "bash -c \"

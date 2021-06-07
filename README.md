@@ -6,7 +6,7 @@ In order to execute the mission, perform the following steps:
 
 - Install Lidar components:
 
-	$ ./lidar_installation
+        $ ./lidar_installation.sh
 
 - Execute the script that launches Gazebo for this project:
 

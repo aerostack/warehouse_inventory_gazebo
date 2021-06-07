@@ -8,7 +8,8 @@ import time
 qr_codes = []
 
 points = [
-  [6.4, 5.5, 0.58], [6.4, 14.4, 0.58] ,[6.4, 14.4, 1.30], [6.4, 5.5, 1.20] , [6.4, 5.5, 1.9], [6.4, 14.4, 1.9],[6.4, 5.5, 1.2]]
+  [6.4, 5.5, 0.58], [6.4, 14.4, 0.58] ,[6.4, 14.4, 1.30], [6.4, 5.5, 1.20] , [6.4, 5.5, 1.9], [6.4, 14.4, 1.9],
+[9.9, 14.4, 1.9], [9.9, 5.5, 1.9], [9.9, 5.5, 1.20], [9.9, 14.4, 1.20], [9.9, 14.4, 0.58], [9.9, 5.5, 0.58], [6, 5, 0.58]]
 
 def qr_callback(msg):
   global qr_codes
@@ -30,23 +31,23 @@ def mission():
   print("Starting mission...")
   print("Taking off...")
   mxc.executeTask('TAKE_OFF')
-  mxc.startTask('HOVER')
-  mxc.startTask('CLEAR_OCCUPANCY_GRID')	
+  mxc.startTask('HOVER')	
   print("Take off completed...")
   j=0
   rospy.Subscriber("/drone111/all_beliefs", ListOfBeliefs, qr_callback)
   uid = 0
-  for point in points:
+  mxc.startTask('CLEAR_OCCUPANCY_GRID')
+  for j, point in enumerate (points, 0):
       retry = 0
       print("Generating path")
       print (str(point))
       if (j == 1 or j == 3 or j == 5 or j == 9 or j == 11):
-        mxc.startTask('CLEAR_OCCUPANCY_GRID')	  
-      while (retry == 0):
+        mxc.startTask('CLEAR_OCCUPANCY_GRID')
+      exit_code = 3	  
+      while (retry == 0 or exit_code == 3):
 	if (j == 2 or j == 4 or j == 8 or j == 10):
-		result = mxc.executeTask('FOLLOW_PATH', path=[points[j-1],points[j]])
+		exit_code = mxc.executeTask('FOLLOW_PATH', path=[points[j-1],points[j]])[1]
 		retry = 1
-		j+=1
 	else:
 		traject = mxc.executeTask('GENERATE_PATH', destination=point)
         	query = "path(?x,?y)"
@@ -67,18 +68,17 @@ def mission():
            		print len(traject)
            		print ("Following path")
            		print ("---------------------------------")
-           		result = mxc.executeTask('FOLLOW_PATH', path=traject)
-           		j+=1
+           		exit_code = mxc.executeTask('FOLLOW_PATH', path=traject)[1]
 	   		retry = 1
         	else:
            		print("next iteration")
 	   		mxc.startTask('CLEAR_OCCUPANCY_GRID')
-		if (j == 1 or j == 7):
+		if (j == 1):
 	   		mxc.startTask('PAY_ATTENTION_TO_QR_CODES')
+  mxc.executeTask('LAND')
+
 
 
   #print(qr_codes)
-  print('-> Total QR codes detected: {}'.format(len(qr_codes)))
-  result = mxc.executeTask('LAND')
-  print('-> result {}'.format(traject))
+  #mxc.startTask('CLEAR_OCCUPANCY_GRID') 
   print('Finish mission...')

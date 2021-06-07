@@ -83,208 +83,198 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>2961 392000000</sim_time>
-      <real_time>658 471355505</real_time>
-      <wall_time>1608200569 67979593</wall_time>
-      <iterations>600738</iterations>
+      <sim_time>3023 292000000</sim_time>
+      <real_time>40 736647334</real_time>
+      <wall_time>1623056566 572067888</wall_time>
+      <iterations>39125</iterations>
       <model name='Caja'>
-        <pose frame=''>7.50064 5.88267 1.5656 9e-06 5e-06 -0.002349</pose>
+        <pose frame=''>7.50025 5.88108 1.56558 1e-06 -2e-06 -0.002153</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>7.50064 5.88267 1.8156 9e-06 5e-06 -0.002349</pose>
+          <pose frame=''>7.50025 5.88108 1.81558 1e-06 -2e-06 -0.002153</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>1.33093 -0.705724 4.84255 2.80792 0.664515 0.101797</acceleration>
-          <wrench>0.519062 -0.275232 1.8886 0 -0 0</wrench>
+          <acceleration>0.156468 0.191868 -4.20181 1.08429 1.06368 -0.006761</acceleration>
+          <wrench>0.061022 0.074829 -1.63871 0 -0 0</wrench>
         </link>
       </model>
       <model name='CuboQR10'>
-        <pose frame=''>7.36577 10.4605 1.56559 -5e-06 1.3e-05 -0.0002</pose>
+        <pose frame=''>7.36524 10.4579 1.56557 -2e-06 2e-06 0.000448</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>7.36577 10.4605 1.81559 -5e-06 1.3e-05 -0.0002</pose>
+          <pose frame=''>7.36524 10.4579 1.81557 -2e-06 2e-06 0.000448</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-4.21196 -3.04921 -0.355527 0.450381 0.000639 0.002078</acceleration>
-          <wrench>-1.64267 -1.18919 -0.138656 0 -0 0</wrench>
+          <acceleration>-0.072968 0.065519 -3.7322 -1.17363 0.183716 0.011746</acceleration>
+          <wrench>-0.028458 0.025552 -1.45556 0 -0 0</wrench>
         </link>
       </model>
       <model name='CuboQR12'>
-        <pose frame=''>10.9061 9.46736 0.270556 1e-05 -0 -0.034883</pose>
+        <pose frame=''>10.9061 9.46734 0.270551 2.3e-05 -3.2e-05 -0.035641</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>10.9061 9.46736 0.520556 1e-05 -0 -0.034883</pose>
+          <pose frame=''>10.9061 9.46733 0.520551 2.3e-05 -3.2e-05 -0.035641</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-1.01093 -1.80316 5.82212 -2.0254 0.835517 0.02918</acceleration>
-          <wrench>-0.394262 -0.703233 2.27063 0 -0 0</wrench>
+          <acceleration>4.44733 1.72974 12.3136 1.89905 0.996199 0.685958</acceleration>
+          <wrench>1.73446 0.6746 4.80231 0 -0 0</wrench>
         </link>
       </model>
       <model name='CuboQR14'>
-        <pose frame=''>10.9097 12.6225 0.911644 3e-05 3e-06 -0.04984</pose>
+        <pose frame=''>10.9097 12.6223 0.91165 3e-06 3e-06 -0.050755</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>10.9097 12.6225 1.16164 3e-05 3e-06 -0.04984</pose>
+          <pose frame=''>10.9097 12.6223 1.16165 3e-06 3e-06 -0.050755</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.229459 0.964143 -8.31742 2.7285 1.21881 3.00175</acceleration>
-          <wrench>-0.089489 0.376016 -3.24379 0 -0 0</wrench>
+          <acceleration>-0.448121 0.530795 -5.07063 1.16493 0.262254 0.013995</acceleration>
+          <wrench>-0.174767 0.20701 -1.97755 0 -0 0</wrench>
         </link>
       </model>
       <model name='CuboQR15'>
-        <pose frame=''>10.8658 12.5779 0.270534 -1.3e-05 -1.1e-05 -0.034319</pose>
+        <pose frame=''>10.8659 12.5779 0.270547 -2.4e-05 -4.6e-05 -0.035128</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>10.8658 12.5779 0.520534 -1.3e-05 -1.1e-05 -0.034319</pose>
+          <pose frame=''>10.8659 12.5779 0.520547 -2.4e-05 -4.6e-05 -0.035128</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>1.61125 -2.47014 6.32601 2.58531 0.842546 -1.68599</acceleration>
-          <wrench>0.628386 -0.963355 2.46714 0 -0 0</wrench>
+          <acceleration>1.68264 -1.66591 -7.61017 1.74325 -1.44366 1.52171</acceleration>
+          <wrench>0.656231 -0.649703 -2.96797 0 -0 0</wrench>
         </link>
       </model>
       <model name='CuboQR17'>
-        <pose frame=''>11.1027 13.9529 1.16163 1.5708 -1.9e-05 -1.58818</pose>
+        <pose frame=''>11.103 13.9527 1.16165 1.57079 0 -1.5886</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>10.8527 13.9573 1.16163 1.5708 -1.9e-05 -1.58818</pose>
+          <pose frame=''>10.853 13.9571 1.16165 1.57079 0 -1.5886</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -9.8 0 4e-06 -1.1e-05</acceleration>
-          <wrench>0 0 -3.822 0 -0 0</wrench>
+          <acceleration>-0.096006 -0.071828 -6.51871 -2.9441 1.17313 -3.1379</acceleration>
+          <wrench>-0.037442 -0.028013 -2.5423 0 -0 0</wrench>
         </link>
       </model>
       <model name='CuboQR19'>
-        <pose frame=''>10.6629 6.04477 1.81559 0.175448 1.57079 0.166273</pose>
+        <pose frame=''>10.6628 6.04432 1.8156 2.94565 1.57076 2.93666</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>10.9128 6.04248 1.81559 0.175448 1.57079 0.166273</pose>
+          <pose frame=''>10.9128 6.04207 1.81559 2.94565 1.57076 2.93666</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-2.99174 0.649375 -1.56173 1.90947 -0.732252 3.11236</acceleration>
-          <wrench>-1.16678 0.253256 -0.609076 0 -0 0</wrench>
+          <acceleration>8.5196 0.201354 4.39058 2.48435 0.572076 3.08763</acceleration>
+          <wrench>3.32264 0.078528 1.71233 0 -0 0</wrench>
         </link>
       </model>
       <model name='CuboQR2'>
-        <pose frame=''>7.44509 6.25011 0.911661 1e-05 -2.3e-05 -0.026909</pose>
+        <pose frame=''>7.44469 6.24897 0.911654 -2.4e-05 -5e-06 -0.026752</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>7.44509 6.25011 1.16166 1e-05 -2.3e-05 -0.026909</pose>
+          <pose frame=''>7.44469 6.24898 1.16165 -2.4e-05 -5e-06 -0.026752</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-4.99089 -0.302005 1.30754 1.98063 0.404981 0.300579</acceleration>
-          <wrench>-1.94645 -0.117782 0.509941 0 -0 0</wrench>
+          <acceleration>0.257395 -0.353917 -9.42507 0.697201 0.473969 2.94342</acceleration>
+          <wrench>0.100384 -0.138028 -3.67578 0 -0 0</wrench>
         </link>
       </model>
       <model name='CuboQR20'>
-        <pose frame=''>10.6818 6.60992 0.520558 2.85693 1.57078 2.8353</pose>
+        <pose frame=''>10.682 6.60954 0.520538 0.746611 1.57074 0.725422</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>10.9317 6.60452 0.520554 2.85693 1.57078 2.8353</pose>
+          <pose frame=''>10.932 6.60424 0.520549 0.746611 1.57074 0.725422</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-4.66284 2.20431 2.45908 2.98155 0.911078 -0.050966</acceleration>
-          <wrench>-1.81851 0.859681 0.959041 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='CuboQR26'>
-        <pose frame=''>11.176 7.05468 1.16166 2.84113 -1.57079 -2.86249</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>10.9261 7.06002 1.16166 2.84113 -1.57079 -2.86249</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.363222 2.00586 -1.34425 -1.63055 -0.061833 2.19244</acceleration>
-          <wrench>-0.141656 0.782285 -0.524257 0 -0 0</wrench>
+          <acceleration>-10.1025 -2.23843 14.8671 -1.67364 -1.55455 3.0008</acceleration>
+          <wrench>-3.93996 -0.872988 5.79816 0 -0 0</wrench>
         </link>
       </model>
       <model name='CuboQR27'>
-        <pose frame=''>10.9207 10.7797 0.911666 1.2e-05 4e-06 0.004022</pose>
+        <pose frame=''>10.9213 10.7796 0.911662 6e-06 7e-06 0.003599</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>10.9207 10.7797 1.16167 1.2e-05 4e-06 0.004022</pose>
+          <pose frame=''>10.9213 10.7796 1.16166 6e-06 7e-06 0.003599</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.816579 3.34313 -3.96629 -2.44518 -0.075039 0.162081</acceleration>
-          <wrench>-0.318466 1.30382 -1.54685 0 -0 0</wrench>
+          <acceleration>0.165446 -1.58867 8.49818 0.862647 -0.799794 2.97625</acceleration>
+          <wrench>0.064524 -0.619582 3.31429 0 -0 0</wrench>
         </link>
       </model>
       <model name='CuboQR29'>
-        <pose frame=''>10.9574 10.1113 1.5656 -1.5e-05 -2.5e-05 -0.018919</pose>
+        <pose frame=''>10.9575 10.1113 1.56559 -1e-05 -7e-06 -0.019684</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>10.9574 10.1113 1.8156 -1.5e-05 -2.5e-05 -0.018919</pose>
+          <pose frame=''>10.9575 10.1113 1.81559 -1e-05 -7e-06 -0.019684</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>4.94913 -3.69767 1.10875 -1.71666 0.506185 -0.6564</acceleration>
-          <wrench>1.93016 -1.44209 0.432412 0 -0 0</wrench>
+          <acceleration>1.21243 -1.89519 4.97945 -1.61249 -1.06793 -0.191506</acceleration>
+          <wrench>0.472849 -0.739124 1.94199 0 -0 0</wrench>
         </link>
       </model>
       <model name='CuboQR3'>
-        <pose frame=''>7.51673 6.91125 0.911665 9e-06 1e-06 -0.020361</pose>
+        <pose frame=''>7.51688 6.91027 0.911649 0 3e-06 -0.021582</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>7.51673 6.91124 1.16166 9e-06 1e-06 -0.020361</pose>
+          <pose frame=''>7.51688 6.91027 1.16165 0 3e-06 -0.021582</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.400476 -0.509615 3.50518 -3.02376 -1.16959 0.106436</acceleration>
-          <wrench>-0.156186 -0.19875 1.36702 0 -0 0</wrench>
+          <acceleration>-0.400017 0.337005 -4.95226 2.54335 -1.27328 3.13904</acceleration>
+          <wrench>-0.156006 0.131432 -1.93138 0 -0 0</wrench>
         </link>
       </model>
       <model name='CuboQR30'>
-        <pose frame=''>7.48964 9.13404 0.91166 1.3e-05 1.4e-05 -0.065105</pose>
+        <pose frame=''>7.48997 9.1346 0.911629 9e-06 3.6e-05 -0.068188</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>7.48964 9.13404 1.16166 1.3e-05 1.4e-05 -0.065105</pose>
+          <pose frame=''>7.48998 9.1346 1.16163 9e-06 3.6e-05 -0.068188</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.939867 1.64341 -1.87565 0.127497 -0.297347 1.86585</acceleration>
-          <wrench>-0.366548 0.640931 -0.731504 0 -0 0</wrench>
+          <acceleration>-1.81472 2.35318 8.70645 -2.61886 0.89679 -0.199223</acceleration>
+          <wrench>-0.707739 0.91774 3.39552 0 -0 0</wrench>
         </link>
       </model>
       <model name='CuboQR32'>
-        <pose frame=''>7.45863 13.9381 1.5656 -1.2e-05 -1.4e-05 0.001816</pose>
+        <pose frame=''>7.4615 13.9384 1.5656 1e-06 -2.3e-05 0.006647</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>7.45862 13.9381 1.8156 -1.2e-05 -1.4e-05 0.001816</pose>
+          <pose frame=''>7.4615 13.9384 1.8156 1e-06 -2.3e-05 0.006647</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-1.18242 1.93331 19.0774 3.03036 -0.951824 -3.11545</acceleration>
-          <wrench>-0.461142 0.753992 7.4402 0 -0 0</wrench>
+          <acceleration>1.7442 -0.428981 -7.71844 -2.56 1.10861 2.76499</acceleration>
+          <wrench>0.680237 -0.167303 -3.01019 0 -0 0</wrench>
         </link>
       </model>
       <model name='CuboQR4'>
-        <pose frame=''>7.48868 7.51512 0.270555 2e-06 -1e-06 -0.030166</pose>
+        <pose frame=''>7.49305 7.51846 0.270555 -1.8e-05 4e-06 -0.034523</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>7.48868 7.51512 0.520555 2e-06 -1e-06 -0.030166</pose>
+          <pose frame=''>7.49305 7.51847 0.520555 -1.8e-05 4e-06 -0.034523</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>4.40329 1.28082 -3.44305 3.09215 -1.18448 -2.65892</acceleration>
-          <wrench>1.71728 0.499521 -1.34279 0 -0 0</wrench>
+          <acceleration>-2.74081 3.56553 29.0241 -2.05879 -0.282018 0.253568</acceleration>
+          <wrench>-1.06892 1.39056 11.3194 0 -0 0</wrench>
         </link>
       </model>
       <model name='CuboQR5'>
-        <pose frame=''>7.42468 13.9944 0.911655 1e-06 -2e-06 -0.013124</pose>
+        <pose frame=''>7.42499 13.9939 0.911664 2e-06 -1e-06 -0.014094</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>7.42468 13.9944 1.16166 1e-06 -2e-06 -0.013124</pose>
+          <pose frame=''>7.42499 13.9939 1.16166 2e-06 -1e-06 -0.014094</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.083292 -0.007057 -9.71182 0.328466 0.641858 0.023411</acceleration>
-          <wrench>0.032484 -0.002752 -3.78761 0 -0 0</wrench>
+          <acceleration>-0.992822 -0.367775 -0.048959 1.98134 -0.22202 0.009864</acceleration>
+          <wrench>-0.387201 -0.143432 -0.019094 0 -0 0</wrench>
         </link>
       </model>
       <model name='CuboQR6'>
-        <pose frame=''>7.40858 12.3203 0.911654 -1e-06 1e-06 -0.008112</pose>
+        <pose frame=''>7.40841 12.3193 0.911664 1e-06 -0 -0.009128</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>7.40858 12.3203 1.16165 -1e-06 1e-06 -0.008112</pose>
+          <pose frame=''>7.40841 12.3193 1.16166 1e-06 -0 -0.009128</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.023479 -0.094564 -9.69933 0.794334 -0.277105 0.173304</acceleration>
-          <wrench>-0.009157 -0.03688 -3.78274 0 -0 0</wrench>
+          <acceleration>-0.097389 -2.19595 -0.389884 1.69581 -1.07442 -3.13628</acceleration>
+          <wrench>-0.037982 -0.856419 -0.152055 0 -0 0</wrench>
         </link>
       </model>
       <model name='CuboQR8'>
-        <pose frame=''>7.43734 9.55309 1.56559 -9e-06 -4e-06 -0.008728</pose>
+        <pose frame=''>7.44679 9.5512 1.56557 6e-06 -0 -0.014293</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>7.43734 9.55309 1.81559 -9e-06 -4e-06 -0.008728</pose>
+          <pose frame=''>7.44679 9.5512 1.81557 6e-06 -0 -0.014293</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>2.05388 -4.06796 -2.91669 2.54889 -0.159 1.01149</acceleration>
-          <wrench>0.801012 -1.58651 -1.13751 0 -0 0</wrench>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -3.822 0 -0 0</wrench>
         </link>
       </model>
       <model name='CuboQR9'>
-        <pose frame=''>7.41836 10.5782 0.270553 1e-06 8e-06 -0.021259</pose>
+        <pose frame=''>7.41863 10.577 0.270542 3.2e-05 -2.1e-05 -0.022048</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>7.41837 10.5782 0.520553 1e-06 8e-06 -0.021259</pose>
+          <pose frame=''>7.41863 10.577 0.520542 3.2e-05 -2.1e-05 -0.022048</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.49194 -1.31026 7.90084 0.492129 -1.08365 3.14088</acceleration>
-          <wrench>-0.191857 -0.511 3.08133 0 -0 0</wrench>
+          <acceleration>0.07554 1.8899 -7.81277 -0.132715 1.53714 0.75763</acceleration>
+          <wrench>0.029461 0.737062 -3.04698 0 -0 0</wrench>
         </link>
       </model>
       <model name='Estanterias2'>
@@ -328,7 +318,7 @@
         </link>
       </model>
       <model name='Plano14'>
-        <pose frame=''>10.7078 12.6284 0.906754 0 0 -1.62849</pose>
+        <pose frame=''>10.7078 12.6284 0.90675 0 0 -1.62849</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>10.7078 12.6284 1.15675 0 0 -1.62849</pose>
@@ -348,7 +338,7 @@
         </link>
       </model>
       <model name='Plano17'>
-        <pose frame=''>10.6508 13.9613 0.903508 0 0 -1.5876</pose>
+        <pose frame=''>10.6508 13.9613 0.90351 0 0 -1.5876</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>10.6508 13.9613 1.15351 0 0 -1.5876</pose>
@@ -387,18 +377,8 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='Plano26_0'>
-        <pose frame=''>10.7205 7.06672 0.906469 0 0 -1.58759</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>10.7205 7.06672 1.15647 0 0 -1.58759</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
       <model name='Plano27'>
-        <pose frame=''>10.7156 10.7789 0.900017 0 0 -1.57306</pose>
+        <pose frame=''>10.7156 10.7789 0.90002 0 0 -1.57306</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose frame=''>10.7156 10.7789 1.15002 0 0 -1.57306</pose>
@@ -498,63 +478,63 @@
         </link>
       </model>
       <model name='estanteria_clone_0'>
-        <pose frame=''>7.64263 5.15473 0 1e-06 -0 -0.006528</pose>
+        <pose frame=''>7.64238 5.15386 0 0 0 -0.006625</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose frame=''>7.64263 5.15473 0 1e-06 -0 -0.006528</pose>
+          <pose frame=''>7.64238 5.15386 0 0 0 -0.006625</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.002124 0.023281 6.09055 -1.45164 0.007805 0.10051</acceleration>
-          <wrench>0.002124 0.023281 6.09055 0 -0 0</wrench>
+          <acceleration>-0.000974 -0.000264 10.1402 -0.025982 0.222454 -0.000611</acceleration>
+          <wrench>-0.000974 -0.000264 10.1402 0 -0 0</wrench>
         </link>
       </model>
       <model name='estanteria_clone_0_clone'>
-        <pose frame=''>11.1103 5.36013 0 -1e-06 -0 -0.009148</pose>
+        <pose frame=''>11.1102 5.35982 -0 0 0 -0.009247</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose frame=''>11.1103 5.36013 0 -1e-06 -0 -0.009148</pose>
+          <pose frame=''>11.1102 5.35982 -0 0 0 -0.009247</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.005142 0.009832 0.20187 -0.576577 -0.059517 -0.132242</acceleration>
-          <wrench>-0.005142 0.009832 0.20187 0 -0 0</wrench>
+          <acceleration>-0.012823 -0.041824 9.96951 -0.908283 0.227596 -0.12191</acceleration>
+          <wrench>-0.012823 -0.041824 9.96951 0 -0 0</wrench>
         </link>
       </model>
       <model name='estanteria_clone_clone'>
-        <pose frame=''>7.66817 8.38934 -6e-06 2e-06 -0 -0.004959</pose>
+        <pose frame=''>7.66757 8.38782 -3.6e-05 -2e-06 -0 -0.005071</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose frame=''>7.66817 8.38934 -6e-06 2e-06 -0 -0.004959</pose>
+          <pose frame=''>7.66757 8.38782 -3.6e-05 -2e-06 -0 -0.005071</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.013065 0.007091 -5.74191 1.836 -0.278887 0.002993</acceleration>
-          <wrench>0.013065 0.007091 -5.74191 0 -0 0</wrench>
+          <acceleration>0.707739 -0.91774 -17.0175 -0.258894 -0.027168 -0.02193</acceleration>
+          <wrench>0.707739 -0.91774 -17.0175 0 -0 0</wrench>
         </link>
       </model>
       <model name='estanteria_clone_clone_0'>
-        <pose frame=''>7.6751 11.5899 0 0 0 -0.00329</pose>
+        <pose frame=''>7.67482 11.589 0 0 -0 -0.003382</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose frame=''>7.6751 11.5899 0 0 0 -0.00329</pose>
+          <pose frame=''>7.67482 11.589 0 0 -0 -0.003382</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.000512 0.000121 10.0768 -0.070612 0.313402 0.000234</acceleration>
-          <wrench>0.000512 0.000121 10.0768 0 -0 0</wrench>
+          <acceleration>-0.001217 0.002402 0.016122 -0.028819 0.332844 0.003581</acceleration>
+          <wrench>-0.001217 0.002402 0.016122 0 -0 0</wrench>
         </link>
       </model>
       <model name='estanteria_clone_clone_0_clone'>
-        <pose frame=''>11.0774 11.7633 -2.1e-05 0 0 -0.00897</pose>
+        <pose frame=''>11.0771 11.7632 -1.4e-05 0 0 -0.009127</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose frame=''>11.0774 11.7633 -2.1e-05 0 0 -0.00897</pose>
+          <pose frame=''>11.0771 11.7632 -1.4e-05 0 0 -0.009127</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.555149 0.606978 -16.6923 -0.346749 -0.101596 0.019441</acceleration>
-          <wrench>-0.555149 0.606978 -16.6923 0 -0 0</wrench>
+          <acceleration>-0.444021 0.470706 -13.7782 -0.313682 -0.05274 0.011593</acceleration>
+          <wrench>-0.444021 0.470706 -13.7782 0 -0 0</wrench>
         </link>
       </model>
       <model name='estanteria_clone_clone_clone'>
-        <pose frame=''>11.1309 8.53445 0 1e-06 -0 0.002459</pose>
+        <pose frame=''>11.1307 8.53423 -7e-06 2e-06 -0 0.002386</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose frame=''>11.1309 8.53445 0 1e-06 -0 0.002459</pose>
+          <pose frame=''>11.1307 8.53423 -7e-06 2e-06 -0 0.002386</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.002288 0.023401 6.88147 -1.10718 0.155887 0.101703</acceleration>
-          <wrench>0.002288 0.023401 6.88147 0 -0 0</wrench>
+          <acceleration>-0.475936 0.02054 -6.26263 2.1883 -0.542371 -0.167011</acceleration>
+          <wrench>-0.475936 0.02054 -6.26263 0 -0 0</wrench>
         </link>
       </model>
       <model name='ground_plane'>
@@ -567,7 +547,6 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      
       <model name='qrware'>
         <pose frame=''>7.98806 9.76227 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -602,7 +581,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>-0.537295 9.1415 12.4708 0 0.969801 -0.003833</pose>
+        <pose frame=''>-0.537439 9.62297 11.9797 -0 0.973801 0.004167</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -1605,60 +1584,6 @@
       </link>
       <pose frame=''>21.0777 6.93045 0 0 -0 0</pose>
     </model>
-    <model name='CuboQR26'>
-      <link name='link'>
-        <pose frame=''>0 0 0.25 0 -0 0</pose>
-        <inertial>
-          <mass>0.39</mass>
-          <inertia>
-            <ixx>0.00058</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.00058</iyy>
-            <iyz>0</iyz>
-            <izz>0.00019</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <box>
-              <size>0.4 0.4 0.4</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <box>
-              <size>0.4 0.4 0.4</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://Caja/materials/scripts</uri>
-              <uri>model://Caja/materials/textures</uri>
-              <name>Caja/Diffuse</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <enable_wind>0</enable_wind>
-      </link>
-      <pose frame=''>21.0901 14.3452 0 0 -0 0</pose>
-    </model>
     <model name='CuboQR27'>
       <link name='link'>
         <pose frame=''>0 0 0.25 0 -0 0</pose>
@@ -2385,7 +2310,7 @@
               <name>Plano/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -2441,7 +2366,7 @@
               <name>Plano2/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -2497,7 +2422,7 @@
               <name>Plano3/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -2553,7 +2478,7 @@
               <name>Plano4/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -2609,7 +2534,7 @@
               <name>Plano30/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -2665,7 +2590,7 @@
               <name>Plano8/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -2721,7 +2646,7 @@
               <name>Plano10/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -2777,7 +2702,7 @@
               <name>Plano9/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -2833,7 +2758,7 @@
               <name>Plano6/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -2889,7 +2814,7 @@
               <name>Plano32/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -2945,7 +2870,7 @@
               <name>Plano5/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -3001,7 +2926,7 @@
               <name>Plano26/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -3057,69 +2982,13 @@
               <name>Plano20/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
       <pose frame=''>10.3404 6.70609 0 0 -0 0</pose>
-    </model>
-    <model name='Plano26_0'>
-      <link name='link'>
-        <gravity>0</gravity>
-        <pose frame=''>0 0 0.25 0 -0 0</pose>
-        <inertial>
-          <mass>1e-06</mass>
-          <inertia>
-            <ixx>0.00058</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.00058</iyy>
-            <iyz>0</iyz>
-            <izz>0.00019</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <box>
-              <size>0.2 1e-06 0.2</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <box>
-              <size>0.2 1e-06 0.2</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://Plano26/materials/scripts</uri>
-              <uri>model://Plano26/materials/textures</uri>
-              <name>Plano26/Diffuse</name>
-            </script>
-          </material>
-	<cast_shadows>0</cast_shadows>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>10.3451 7.07861 0 0 -0 0</pose>
     </model>
     <model name='Plano12'>
       <link name='link'>
@@ -3169,7 +3038,7 @@
               <name>Plano12/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -3225,7 +3094,7 @@
               <name>Plano29/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -3281,7 +3150,7 @@
               <name>Plano27/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -3337,7 +3206,7 @@
               <name>Plano15/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -3393,7 +3262,7 @@
               <name>Plano14/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
@@ -3449,7 +3318,7 @@
               <name>Plano17/Diffuse</name>
             </script>
           </material>
-	<cast_shadows>0</cast_shadows>
+          <cast_shadows>0</cast_shadows>
         </visual>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>

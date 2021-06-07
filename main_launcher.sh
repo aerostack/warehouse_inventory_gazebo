@@ -84,6 +84,14 @@ roslaunch inventory_item_belief_updater inventory_item_belief_updater.launch --w
     drone_id:=$NUMID_DRONE;
 exec bash\""  \
 `#---------------------------------------------------------------------------------------------` \
+`# Item Annotator                                                                              ` \
+`#---------------------------------------------------------------------------------------------` \
+--tab --title "Item Annotator" --command "bash -c \"
+roslaunch inventory_item_image_annotator inventory_item_image_annotator.launch --wait \
+    drone_id_namespace:=drone$NUMID_DRONE \
+    drone_id:=$NUMID_DRONE;
+exec bash\""  \
+`#---------------------------------------------------------------------------------------------` \
 `# Belief Updater                                                                              ` \
 `#---------------------------------------------------------------------------------------------` \
 --tab --title "Belief Updater" --command "bash -c \"
@@ -123,9 +131,17 @@ exec bash\""  \
 --tab --title "Navigation With Lidar" --command "bash -c \"
 roslaunch navigation_with_lidar navigation_with_lidar.launch --wait \
   namespace:=drone$NUMID_DRONE;
+  clearance:=0.3;
 exec bash\"" &
 
 gnome-terminal  \
+`#---------------------------------------------------------------------------------------------` \
+`# Go_TO                                                         ` \
+`#---------------------------------------------------------------------------------------------` \
+--tab --title "Go to" --command "bash -c \"
+roslaunch go_to go_to.launch --wait \
+    drone_id_namespace:=drone$NUMID_DRONE;
+exec bash\""  \
 `#---------------------------------------------------------------------------------------------` \
 `# alphanumeric_viewer                                                                         ` \
 `#---------------------------------------------------------------------------------------------` \

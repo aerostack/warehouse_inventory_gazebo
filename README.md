@@ -12,6 +12,7 @@ In order to execute the mission, perform the following steps:
 
         $ ./launcher_gazebo.sh
 
+
 - Wait until the following window is presented:
 
 <img src="https://github.com/aerostack/warehouse_inventory_gazebo/blob/master/doc/launchwarehouse.png" width=600>
@@ -34,10 +35,10 @@ In order to start the execution of the mission, execute the following command:
 
 The following video illustrates how to launch the project and launch the image of the camera annotator:
 
-[ ![Launch](https://ibb.co/k1v4zsS)](https://youtu.be/ak8_XdOeGqk)
+[ ![Launch](https://i.ibb.co/gVhSQLR/launchmission.png)](https://youtu.be/ak8_XdOeGqk)
 
 The following video shows the complete execution with the image of the front camera:
 
-[ ![Execution](https://ibb.co/frbwLQN)](https://youtu.be/vERaALMIWm4)
+[ ![Execution](https://i.ibb.co/zP1vDN2/executionwarehouse.png)](https://youtu.be/vERaALMIWm4)
 
 

@@ -102,7 +102,7 @@ repositories:
   libraries/lib_cvgutils:
     type: git 
     url: https://github.com/aerostack/lib_cvgutils
-    version: master
+    version: noetic
   libraries/pugixml:
     type: git 
     url: https://github.com/aerostack/pugixml
@@ -115,7 +115,10 @@ repositories:
     type: git
     url: https://github.com/aerostack/catkin_simple
     version: master
-
+  libraries/mav_comm:
+    type: git
+    url: https://github.com/aerostack/mav_comm
+    version: master
 #----------------------------------------------------------------------------
 # Deprecated libraries
 #----------------------------------------------------------------------------

@@ -1,0 +1,15 @@
+material Caja/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture aws_robomaker_warehouse_ShelfF_02.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+material shelveMat/Diffuse
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+       texture vector-diamond-metal.png
+      }
+    }
+  }
+}

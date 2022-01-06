@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='PalletRack'>
+    <link name='link_0'>
+      <pose frame=''>-0 0 0 0 -0 0</pose>
+      <inertial>
+        <mass>20.0</mass>
+        <inertia>
+          <ixx>63.5768</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>72.8230</iyy>
+          <iyz>0</iyz>
+          <izz>13.0315</izz>
+        </inertia>
+      </inertial>
+      <visual name='visual'>
+        <geometry>
+          <mesh>
+            <uri>model://PalletRack/meshes/figura.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name='collision'>
+        <geometry>
+          <mesh>
+            <uri>model://PalletRack/meshes/figura.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

@@ -8,5 +8,5 @@ local_costmap:
   width: 5.0
   height: 5.0
   resolution: 0.05
-  origin_x: -7.0
-  origin_y: -7.0
+  origin_x: 0.0
+  origin_y: 0.0

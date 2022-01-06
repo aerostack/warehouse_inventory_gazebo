@@ -28,7 +28,7 @@
     <rosparam file="$(arg config_path)/local_costmap_params.yaml" command="load" />
     <rosparam file="$(arg config_path)/global_costmap_params.yaml" command="load" />
     <rosparam file="$(arg config_path)/base_local_planner_params.yaml" command="load" />
-    <rosparam param="controller_frequency">13</rosparam>
+    <rosparam param="controller_frequency">20</rosparam>
   </node>
 </group>
 </launch>

@@ -50,7 +50,7 @@ default_values:
   - execution_goal: achieve_goal
     start_on_request: TRUE
     reactive_start: FALSE
-    timeout: 15
+    timeout: 1000
 - behaviors:
   - suitability: 100
 
@@ -72,56 +72,35 @@ behaviors:
   package: basic_quadrotor_behaviors
   task: SELF_LOCALIZE
 #------------------------------------------------------
-- behavior: TAKE_OFF_WITH_PID
-  package: quadrotor_motion_with_pid_control
+- behavior: TAKE_OFF_WITH_DF
+  package: quadrotor_motion_with_df_control
   task: TAKE_OFF
   requires:
-  - task: PID_MOTION_CONTROL
+  - task: QUADROTOR_DF_MOTION_CONTROL
 
-- behavior: LAND_WITH_PID
-  package: quadrotor_motion_with_pid_control
+- behavior: LAND_WITH_DF
+  package: quadrotor_motion_with_df_control
   task: LAND
   requires:
-  - task: PID_MOTION_CONTROL
+  - task: QUADROTOR_DF_MOTION_CONTROL
 
-- behavior: KEEP_HOVERING_WITH_PID_CONTROL
-  package: quadrotor_motion_with_pid_control
-  task: HOVER
-  requires:
-  - task: PID_MOTION_CONTROL
-
-- behavior: KEEP_MOVING_WITH_PID_CONTROL
-  package: quadrotor_motion_with_pid_control
-  task: MOVE_AT_SPEED
-  requires:
-  - task: PID_MOTION_CONTROL
-
-- behavior: ROTATE_WITH_PID_CONTROL
-  package: quadrotor_motion_with_pid_control
-  task: ROTATE
-  requires:
-  - task: PID_MOTION_CONTROL
-
-- behavior: FOLLOW_PATH
-  package: quadrotor_motion_with_pid_control
+- behavior: FOLLOW_PATH_WITH_DF
+  package: quadrotor_motion_with_df_control
   task: FOLLOW_PATH
   requires:
-  - task: PID_MOTION_CONTROL
+  - task: QUADROTOR_DF_MOTION_CONTROL
+  
+- behavior: QUADROTOR_DF_MOTION_CONTROL
+  package: quadrotor_motion_with_df_control
+  task: QUADROTOR_DF_MOTION_CONTROL
 
-- behavior: QUADROTOR_PID_MOTION_CONTROL
-  package: quadrotor_motion_with_pid_control
-  task: PID_MOTION_CONTROL
-  suitability: 90
+- behavior: SEND_PATH
+  package: quadrotor_motion_with_df_control
+  task: SEND_PATH
   requires:
-  - task: SELF_LOCALIZE
-    minimum_performance: 70
-  - task: THRUST_CONTROL
+  - task: FOLLOW_PATH  
+#------------------------------------------------------
 
-- behavior: QUADROTOR_PID_THRUST_CONTROL
-  package: quadrotor_motion_with_pid_control
-  task: THRUST_CONTROL
-  requires:
-  - task: SELF_LOCALIZE
 
 #------------------------------------------------------
 - behavior: GENERATE_PATH_WITH_OCCUPANCY_GRID
@@ -160,23 +139,11 @@ tasks:
   - parameter: direction
     allowed_values: [FORWARD, BACKWARD, LEFT, RIGHT]
 
-- task: ROTATE
-  timeout: 30
-  parameters:
-  - parameter: angle
-    allowed_values: [-360,360]
-  - parameter: relative_angle
-    allowed_values: [-360,360]
-
-- task: FOLLOW_PATH
+- task: SEND_PATH
   timeout: 180
   parameters:
   - parameter: path
     allowed_values: point_list
-
-- task: PID_MOTION_CONTROL
-  start_on_request: FALSE
-  execution_goal: keep_running
 
 - task: THRUST_CONTROL
   start_on_request: FALSE
@@ -186,11 +153,20 @@ tasks:
   start_on_request: FALSE
   execution_goal: keep_running
 
+- task: QUADROTOR_DF_MOTION_CONTROL
+  start_on_request: FALSE
+  execution_goal: keep_running
+
 - task: SAVE_OCCUPANCY_GRID
   parameters:
   - parameter: map_name
     allowed_values: string
 
+- task: TAKE_OFF
+
+- task: LAND
+
+- task: FOLLOW_PATH
 
 #------------------------------------------------------
 exclusivity_constraints:
@@ -199,6 +175,5 @@ exclusivity_constraints:
   - TAKE_OFF
   - LAND
   - HOVER
-  - FOLLOW_PATH
+  - SEND_PATH
   - MOVE_AT_SPEED
-  - ROTATE

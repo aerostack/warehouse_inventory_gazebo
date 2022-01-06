@@ -1,0 +1,33 @@
+!!python/object/new:dynamic_reconfigure.encoding.Config
+dictitems:
+  Kd_x: 1.0
+  Kd_y: 1.0
+  Kd_z: 2.0
+  Kp_pitch: 5.0
+  Kp_roll: 5.0
+  Kp_x: 4.5
+  Kp_y: 4.5
+  Kp_yaw: 5.0
+  Kp_z: 5.0
+  groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+    dictitems:
+      Kd_x: 1.0
+      Kd_y: 1.0
+      Kd_z: 2.0
+      Kp_pitch: 5.0
+      Kp_roll: 5.0
+      Kp_x: 4.5
+      Kp_y: 4.5
+      Kp_yaw: 5.0
+      Kp_z: 5.0
+      groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      id: 0
+      name: Default
+      parameters: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      parent: 0
+      state: true
+      type: ''
+    state: []
+state: []

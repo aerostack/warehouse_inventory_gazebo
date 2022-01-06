@@ -27,7 +27,7 @@ As a result of this command, a set of windows are presented to monitor the execu
 
 After executing the launcher, you can output the image of the camera annotator with the following command:
 
-	$ rosrun image_view image_view image:=/drone111/bounding_image_raw
+	$ rosrun image_view image_view image:=/drone1/bounding_image_raw
 
 In order to start the execution of the mission, execute the following command:
 

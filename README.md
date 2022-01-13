@@ -5,9 +5,9 @@ This application illustrates how a drone inspects a warehouse with qr boxes. Dur
 In order to execute the mission, perform the following steps:
 - Install package Hector_Slam, Move_base and Amcl if not installed yet:
 ```
-	$ sudo apt install ros-noetic-hector-slam
-	$ sudo apt install ros-noetic-move-base
-	$ sudo apt install ros-noetic-amcl 
+$ sudo apt install ros-noetic-hector-slam
+$ sudo apt install ros-noetic-move-base
+$ sudo apt install ros-noetic-amcl 
 ```
 	
 - Execute the script that launches Gazebo for this project:

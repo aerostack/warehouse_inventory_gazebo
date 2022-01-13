@@ -16,7 +16,7 @@ $ sudo apt install ros-noetic-amcl
 
 - Wait until the following window is presented:
 
-<img src="https://github.com/aerostack/warehouse_inventory_gazebo/blob/master/doc/launchwarehouse.png" width=600>
+<img src="https://github.com/aerostack/warehouse_inventory_gazebo/blob/v5-libeccio/doc/launch_window.png" width=600>
 
 - Execute the script that launches the Aerostack components for this project:
 
@@ -33,10 +33,10 @@ In order to start the execution of the mission, execute the following command:
 
 The following video illustrates how to launch the project and launch the image of the camera annotator:
 
-[ ![Launch](https://i.ibb.co/gVhSQLR/launchmission.png)](https://youtu.be/9c6axGrjE30)
+[ ![Launch](https://github.com/aerostack/warehouse_inventory_gazebo/blob/v5-libeccio/doc/launch_gazebo2.png)](https://youtu.be/9c6axGrjE30)
 
 The following video shows the complete execution with the image of the front camera:
 
-[ ![Execution](https://i.ibb.co/zP1vDN2/executionwarehouse.png)](https://youtu.be/ccFlU2Z32rE)
+[ ![Execution](https://github.com/aerostack/warehouse_inventory_gazebo/blob/v5-libeccio/doc/execute_mission.png)](https://youtu.be/ccFlU2Z32rE)
 
 
